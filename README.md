@@ -1,2 +1,5 @@
-# personal-website
-This is my personal website for emberrylum.me
+# Personal-Website
+This is for my emberrylum.me website
+
+### Disclaimer:
+All of the files for the games are not added on here
