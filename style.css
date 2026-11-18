@@ -9,33 +9,37 @@ img {
     height: auto;
 }
 
-img#hamster {
+img #hamster {
     width: 12%;
     height: auto;
 }
 
-img#peehns {
+img #peehns {
     width: 40%;
     height: 200px;
 }
 
-img#paste {
+img #paste {
     width: 30%;
     height: auto;
 }
 
-#banner {
+.marquee {
     display: flex;
     justify-content: space-around;
-
-    position: sticky;
+    
     top: 0px;
 
     background-color: #ffc4d1;
     padding: 10px;
+
+    margin-left: 0;
+    margin-right: 0;
+
+    animation: scroll-left 10s linear infinite;
 }
 
-#banner img {
+.marquee img {
     border-radius: 10px;
 }
 
@@ -52,3 +56,26 @@ a {
     background-color: #fcd6f6;
 }
 
+#cat-gif {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#rolling-cat {
+    position: fixed;
+    bottom: 0;
+    animation: roll 5s linear infinite;
+}
+
+@keyframes roll {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100%); }
+    100% { transform: translateX(0); }
+}
+
+
+@keyframes scroll-left {
+    from { transform: translateX(100vw); }
+    to { transform: translateX(-100%); }
+}
