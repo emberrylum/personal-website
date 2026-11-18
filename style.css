@@ -27,7 +27,7 @@ img #paste {
 .marquee {
     display: flex;
     justify-content: space-around;
-    
+
     top: 0px;
 
     background-color: #ffc4d1;
@@ -63,6 +63,9 @@ a {
 }
 
 #rolling-cat {
+    width: 5vw;
+    height: auto;
+
     position: fixed;
     bottom: 0;
     animation: roll 5s linear infinite;
@@ -73,7 +76,6 @@ a {
     50% { transform: translateX(100%); }
     100% { transform: translateX(0); }
 }
-
 
 @keyframes scroll-left {
     from { transform: translateX(100vw); }
